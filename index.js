@@ -3,7 +3,7 @@ require('dotenv').config()
 const puppeteer = require('puppeteer')
 const cron = require('node-cron');
 const TelegramBot = require('node-telegram-bot-api');
-const bot = new TelegramBot(5843097780:AAEzg5mG91RmiXgxuCni9NhOfjFeRE4O1fI, {polling: true});
+const bot = new TelegramBot('5843097780:AAEzg5mG91RmiXgxuCni9NhOfjFeRE4O1fI', {polling: true});
 
 const app= express();
 // console.log(process.env.PORT)
