@@ -1,7 +1,7 @@
 const express = require('express')
-require('dotenv').config()
+
 const puppeteer = require('puppeteer')
-const cron = require('node-cron');
+
 const TelegramBot = require('node-telegram-bot-api');
 const bot = new TelegramBot('5843097780:AAEzg5mG91RmiXgxuCni9NhOfjFeRE4O1fI', {polling: true});
 
@@ -96,7 +96,7 @@ app.get('/',(req,res)=>{
     res.send('hello')
 })
 
-const port = process.env.PORT;
+const port = 3000;
 
 
 app.listen(port,(req,res)=>{console.log('server is running on port 3000')})
